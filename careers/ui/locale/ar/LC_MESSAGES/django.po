@@ -1,0 +1,1027 @@
+# django-careers Arabic translations.
+# Copyright (C) 2025 Yousuf Abu Shanab
+# This file is distributed under the same license as the django-careers package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: django-careers 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 08:58+0000\n"
+"PO-Revision-Date: 2025-6-20 HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: careers/apps/articles/models.py:25 careers/apps/users/models.py:27
+msgid "country"
+msgstr "الدولة"
+
+#: careers/apps/articles/models.py:26
+#, fuzzy
+#| msgid "country"
+msgid "Country"
+msgstr "الدولة"
+
+#: careers/apps/articles/models.py:32 careers/apps/blog/models.py:44
+#: careers/apps/users/models.py:39
+#, fuzzy
+#| msgid "Image"
+msgid "image"
+msgstr "صورة"
+
+#: careers/apps/articles/models.py:33
+msgid "Article image"
+msgstr "صورة المقال"
+
+#: careers/apps/articles/models.py:38 careers/apps/blog/models.py:50
+#, fuzzy
+#| msgid "Article headline"
+msgid "headline"
+msgstr "عنوان المقال"
+
+#: careers/apps/articles/models.py:39
+msgid "Article headline"
+msgstr "عنوان المقال"
+
+#: careers/apps/articles/models.py:43 careers/apps/blog/models.py:55
+#: careers/apps/home/models.py:67 careers/apps/home/models.py:92
+#, fuzzy
+#| msgid "Article content"
+msgid "content"
+msgstr "محتوى المقال"
+
+#: careers/apps/articles/models.py:44
+msgid "Article content"
+msgstr "محتوى المقال"
+
+#: careers/apps/articles/models.py:48
+#, fuzzy
+#| msgid "Breaking"
+msgid "is breaking"
+msgstr "عاجل"
+
+#: careers/apps/articles/models.py:49
+msgid "Designates if the Article is in breaking news"
+msgstr "يشير إلى ما إذا كان المقال خبرًا عاجلًا"
+
+#: careers/apps/articles/models.py:54 careers/apps/blog/models.py:61
+msgid "tags"
+msgstr "وسوم"
+
+#: careers/apps/articles/models.py:55 careers/cms/wagtail_hooks.py:23
+msgid "Tags"
+msgstr "وسوم"
+
+#: careers/apps/articles/models.py:60
+msgid "recommendations"
+msgstr "الاقتراحات"
+
+#: careers/apps/articles/models.py:61
+msgid "Similar articles"
+msgstr "مقالات ذات صلة"
+
+#: careers/apps/articles/models.py:66
+msgid "News Articles"
+msgstr "مقالات إخبارية"
+
+#: careers/apps/articles/models.py:105
+#, fuzzy
+#| msgid "News Articles"
+msgid "News article"
+msgstr "مقالات إخبارية"
+
+#: careers/apps/articles/models.py:106
+#, fuzzy
+#| msgid "News Articles"
+msgid "News articles"
+msgstr "مقالات إخبارية"
+
+#: careers/apps/blog/models.py:22 careers/apps/blog/models.py:30
+msgid "Blog index page"
+msgstr "المدونة"
+
+#: careers/apps/blog/models.py:45
+#, fuzzy
+#| msgid "Article image"
+msgid "Post image"
+msgstr "صورة المقال"
+
+#: careers/apps/blog/models.py:51
+#, fuzzy
+#| msgid "Article headline"
+msgid "Post headline"
+msgstr "عنوان المقال"
+
+#: careers/apps/blog/models.py:56
+#, fuzzy
+#| msgid "Article content"
+msgid "Post content"
+msgstr "محتوى المقال"
+
+#: careers/apps/blog/models.py:62
+msgid "Post tags"
+msgstr "وسوم المقال"
+
+#: careers/apps/blog/models.py:73
+msgid "Blog Posts"
+msgstr "مقالات المدونة"
+
+#: careers/apps/blog/models.py:95
+msgid "Blog post"
+msgstr "مقال المدونة"
+
+#: careers/apps/blog/models.py:96
+msgid "Blog posts"
+msgstr "مقالات المدونة"
+
+#: careers/apps/categories/models.py:21 careers/apps/categories/models.py:48
+#, fuzzy
+#| msgid "Category description"
+msgid "description"
+msgstr "وصف الفئة"
+
+#: careers/apps/categories/models.py:22
+#, fuzzy
+#| msgid "Category description"
+msgid "Page description"
+msgstr "وصف الفئة"
+
+#: careers/apps/categories/models.py:28 careers/apps/categories/models.py:38
+#, fuzzy
+#| msgid "Categories"
+msgid "Category index page"
+msgstr "الفئات"
+
+#: careers/apps/categories/models.py:39
+#, fuzzy
+#| msgid "Categories"
+msgid "Category index pages"
+msgstr "الفئات"
+
+#: careers/apps/categories/models.py:49
+msgid "Category description"
+msgstr "وصف الفئة"
+
+#: careers/apps/categories/models.py:53
+msgid "show owner"
+msgstr "عرض الكاتب"
+
+#: careers/apps/categories/models.py:54
+msgid "Wether to display the name of the owner of news article"
+msgstr "يحدد فيما إن كنت تريد عرض اسم الكاتب مع المقال"
+
+#: careers/apps/categories/models.py:65
+#, fuzzy
+#| msgid ""
+#| "Categories help organize articles into thematic or subject-related "
+#| "groupings, making it easier for users to explore and filter available "
+#| "articles."
+msgid ""
+"Categories help organize news article into thematic or subject-related "
+"groupings, making it easier for users to explore and filter available news "
+"article."
+msgstr ""
+"تساعد الفئات في تنظيم المقالات ضمن مجموعات موضوعية أو متعلقة بالموضوع، مما "
+"يسهل على المستخدمين استكشاف المقالات وفرزها."
+
+#: careers/apps/categories/models.py:85
+#, fuzzy
+#| msgid "Category"
+msgid "category"
+msgstr "الفئة"
+
+#: careers/apps/categories/models.py:86
+#, fuzzy
+#| msgid "Categories"
+msgid "categories"
+msgstr "الفئات"
+
+#: careers/apps/home/models.py:31
+#, fuzzy
+#| msgid "Home"
+msgid "Home page"
+msgstr "الرئيسية"
+
+#: careers/apps/home/models.py:32
+msgid "Home pages"
+msgstr "الصفحات الرئيسية"
+
+#: careers/apps/home/models.py:68 careers/apps/home/models.py:93
+#, fuzzy
+#| msgid "Article content"
+msgid "Page content"
+msgstr "محتوى المقال"
+
+#: careers/apps/home/models.py:73
+#, fuzzy
+#| msgid "About us"
+msgid "About us page"
+msgstr "من نحن"
+
+#: careers/apps/home/models.py:81
+#, fuzzy
+#| msgid "About us"
+msgid "About page"
+msgstr "من نحن"
+
+#: careers/apps/home/models.py:82
+#, fuzzy
+#| msgid "About us"
+msgid "About pages"
+msgstr "من نحن"
+
+#: careers/apps/home/models.py:98
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact us page"
+msgstr "اتصل بنا"
+
+#: careers/apps/home/models.py:106
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact page"
+msgstr "اتصل بنا"
+
+#: careers/apps/home/models.py:107
+#, fuzzy
+#| msgid "Contact"
+msgid "Contact pages"
+msgstr "اتصل بنا"
+
+#: careers/apps/links/models.py:25
+#, fuzzy
+#| msgid "articles"
+msgid "article"
+msgstr "مقالات"
+
+#: careers/apps/links/models.py:26
+#, fuzzy
+#| msgid "Saved articles"
+msgid "Related article"
+msgstr "المقالات المحفوظة"
+
+#: careers/apps/links/models.py:33 careers/apps/users/models.py:21
+msgid "slug"
+msgstr "رابط"
+
+#: careers/apps/links/models.py:34
+msgid "Link url"
+msgstr "رابط"
+
+#: careers/apps/links/models.py:39 careers/apps/links/models.py:44
+msgid "views"
+msgstr "المشاهدات"
+
+#: careers/apps/links/models.py:40 careers/apps/links/models.py:45
+#, fuzzy
+#| msgid "Article image"
+msgid "Article views"
+msgstr "صورة المقال"
+
+#: careers/apps/links/models.py:51
+#, fuzzy
+#| msgid "Linkedin"
+msgid "Link"
+msgstr "لينكدإن"
+
+#: careers/apps/links/models.py:52
+#, fuzzy
+#| msgid "Linkedin"
+msgid "Links"
+msgstr "لينكدإن"
+
+#: careers/apps/mixins.py:15 careers/apps/mixins.py:16
+#: careers/careers/templates/careers/articles/id.html:244
+#: careers/careers/templates/careers/blog/post.html:134
+msgid "Last update"
+msgstr "آخر تحديث"
+
+#: careers/apps/mixins.py:20 careers/apps/mixins.py:21
+msgid "Date created"
+msgstr "تاريخ الإنشاء"
+
+#: careers/apps/users/models.py:22
+msgid "Slug"
+msgstr "رابط قصير"
+
+#: careers/apps/users/models.py:28
+#, fuzzy
+#| msgid "User photo"
+msgid "User country"
+msgstr "صورة المستخدم"
+
+#: careers/apps/users/models.py:33
+msgid "phone number"
+msgstr "رقم الهاتف"
+
+#: careers/apps/users/models.py:34
+msgid "User phone number"
+msgstr "رقم هاتف المستخدم"
+
+#: careers/apps/users/models.py:41
+#, fuzzy
+#| msgid "Article image"
+msgid "Profile image"
+msgstr "صورة المقال"
+
+#: careers/apps/users/models.py:47
+msgid "bio"
+msgstr "معلومات عامة"
+
+#: careers/apps/users/models.py:48
+msgid "Tell us about yourself"
+msgstr "أخبرنا عن حولك"
+
+#: careers/cms/blocks.py:14
+msgid "Quote"
+msgstr "اقتباس"
+
+#: careers/cms/blocks.py:15
+msgid "Rich Text"
+msgstr "النص"
+
+#: careers/cms/blocks.py:21
+msgid "Video"
+msgstr "فيديو"
+
+#: careers/cms/blocks.py:22
+msgid "Image"
+msgstr "صورة"
+
+#: careers/cms/blocks.py:23
+msgid "Document"
+msgstr "مستند"
+
+#: careers/careers/templates/registration/base.html:4
+#: careers/careers/templates/registration/base.html:69
+#: careers/careers/templates/registration/base.html:76
+#: careers/careers/templates/registration/base.html:169
+#: careers/careers/templates/registration/base.html:196
+#: careers/careers/templates/registration/base.html:236
+#: careers/careers/templates/rest_framework/api.html:139
+#: careers/careers/templates/careers/base.html:322 careers/careers/templates/careers/base.html:329
+#: careers/careers/templates/careers/base.html:468 careers/careers/templates/careers/base.html:475
+#: careers/careers/templates/careers/base.html:937
+msgid "Profile"
+msgstr "الملف الشخصي"
+
+#: careers/careers/templates/registration/base.html:26
+#: careers/careers/templates/registration/base.html:34
+#: careers/careers/templates/registration/base.html:155
+#: careers/careers/templates/registration/base.html:159
+#: careers/careers/templates/registration/base.html:163
+#: careers/careers/templates/careers/base.html:122 careers/careers/templates/careers/base.html:130
+#: careers/careers/templates/careers/base.html:393 careers/careers/templates/careers/base.html:402
+msgid "Open drawer"
+msgstr "افتح القائمة"
+
+#: careers/careers/templates/registration/base.html:30 careers/careers/templates/careers/base.html:126
+#: careers/careers/templates/careers/base.html:397 careers/careers/templates/careers/base.html:697
+#: careers/careers/templates/careers/base.html:734
+#, fuzzy
+#| msgid "Close drawer"
+msgid "close sidebar"
+msgstr "أغلق القائمة"
+
+#: careers/careers/templates/registration/base.html:41
+#: careers/careers/templates/registration/base.html:57
+#: careers/careers/templates/registration/base.html:208
+#: careers/careers/templates/registration/logged_out.html:15
+#: careers/careers/templates/registration/logged_out.html:27
+#: careers/careers/templates/registration/login.html:15
+#: careers/careers/templates/registration/login.html:27
+#: careers/careers/templates/registration/password_reset_complete.html:15
+#: careers/careers/templates/registration/password_reset_complete.html:27
+#: careers/careers/templates/registration/password_reset_confirm.html:15
+#: careers/careers/templates/registration/password_reset_confirm.html:27
+#: careers/careers/templates/registration/password_reset_done.html:15
+#: careers/careers/templates/registration/password_reset_done.html:27
+#: careers/careers/templates/registration/password_reset_form.html:15
+#: careers/careers/templates/registration/password_reset_form.html:27
+#: careers/careers/templates/registration/signup.html:15
+#: careers/careers/templates/registration/signup.html:27
+#: careers/careers/templates/rest_framework/api.html:4
+#: careers/careers/templates/careers/articles/id.html:18
+#: careers/careers/templates/careers/articles/id.html:24
+#: careers/careers/templates/careers/articles/id.html:28
+#: careers/careers/templates/careers/articles/id.html:39
+#: careers/careers/templates/careers/articles/id.html:43 careers/careers/templates/careers/base.html:11
+#: careers/careers/templates/careers/base.html:97 careers/careers/templates/careers/base.html:114
+#: careers/careers/templates/careers/base.html:409 careers/careers/templates/careers/base.html:425
+#: careers/careers/templates/careers/base.html:648 careers/careers/templates/careers/base.html:654
+#: careers/careers/templates/careers/base.html:682 careers/careers/templates/careers/base.html:708
+#: careers/careers/templates/careers/base.html:723 careers/careers/templates/careers/blog/post.html:12
+#: careers/careers/templates/careers/blog/post.html:18 careers/careers/templates/careers/blog/post.html:22
+#: careers/careers/templates/careers/blog/post.html:33 careers/careers/templates/careers/blog/post.html:37
+msgid "Django Careers"
+msgstr "النبأ اليقين"
+
+#: careers/careers/templates/registration/base.html:82
+#: careers/careers/templates/registration/base.html:89
+#: careers/careers/templates/registration/logged_out.html:40
+#: careers/careers/templates/registration/login.html:4
+#: careers/careers/templates/registration/login.html:34
+#: careers/careers/templates/registration/password_reset_complete.html:44
+#: careers/careers/templates/registration/password_reset_done.html:48
+#: careers/careers/templates/registration/signup.html:43
+#: careers/careers/templates/careers/base.html:363 careers/careers/templates/careers/base.html:370
+#: careers/careers/templates/careers/base.html:481 careers/careers/templates/careers/base.html:488
+#: careers/careers/templates/careers/base.html:957
+msgid "Log in"
+msgstr "تسجيل الدخول"
+
+#: careers/careers/templates/registration/base.html:94
+#: careers/careers/templates/registration/base.html:101
+#: careers/careers/templates/registration/logged_out.html:43
+#: careers/careers/templates/registration/login.html:62
+#: careers/careers/templates/registration/signup.html:4
+#: careers/careers/templates/registration/signup.html:34
+#: careers/careers/templates/careers/base.html:348 careers/careers/templates/careers/base.html:358
+#: careers/careers/templates/careers/base.html:493 careers/careers/templates/careers/base.html:503
+#: careers/careers/templates/careers/base.html:966
+msgid "Sign up"
+msgstr "إنشاء حساب"
+
+#: careers/careers/templates/registration/base.html:123
+#: careers/careers/templates/registration/base.html:131
+#: careers/careers/templates/registration/base.html:138
+#: careers/careers/templates/registration/base.html:145
+#: careers/careers/templates/careers/base.html:525 careers/careers/templates/careers/base.html:536
+#: careers/careers/templates/careers/base.html:543 careers/careers/templates/careers/base.html:550
+#: careers/careers/templates/careers/base.html:758 careers/careers/templates/careers/base.html:769
+#: careers/careers/templates/careers/search.html:6 careers/careers/templates/careers/search.html:12
+#: careers/careers/templates/careers/search.html:29
+msgid "Search"
+msgstr "بحث"
+
+#: careers/careers/templates/registration/base.html:186
+#: careers/careers/templates/registration/base.html:219
+msgid "Close drawer"
+msgstr "أغلق القائمة"
+
+#: careers/careers/templates/registration/base.html:215
+#: careers/careers/templates/registration/base.html:223
+#: careers/careers/templates/careers/articles/list.html:64
+#: careers/careers/templates/careers/articles/list.html:72
+#: careers/careers/templates/careers/articles/list.html:86 careers/careers/templates/careers/base.html:730
+#: careers/careers/templates/careers/base.html:738
+msgid "Close"
+msgstr "إغلاق"
+
+#: careers/careers/templates/registration/base.html:247
+#: careers/careers/templates/careers/base.html:150 careers/careers/templates/careers/base.html:160
+#: careers/careers/templates/careers/base.html:796
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: careers/careers/templates/registration/base.html:263
+#: careers/careers/templates/registration/edit.html:4
+#: careers/careers/templates/registration/edit.html:9
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: careers/careers/templates/registration/base.html:272
+msgid "Change Password"
+msgstr "تغيير كلمة المرور"
+
+#: careers/careers/templates/registration/base.html:284
+#: careers/careers/templates/registration/delete.html:4
+#: careers/careers/templates/registration/delete.html:8
+#: careers/careers/templates/registration/delete.html:14
+msgid "Delete account"
+msgstr "حذف الحساب"
+
+#: careers/careers/templates/registration/base.html:294
+#: careers/careers/templates/careers/base.html:334 careers/careers/templates/careers/base.html:342
+#: careers/careers/templates/careers/base.html:947
+msgid "Log out"
+msgstr "تسجيل الخروج"
+
+#: careers/careers/templates/registration/delete.html:18
+msgid "Are your sure that you want to delete your account?"
+msgstr "هل أنت متأكد أنك تريد حذف حسابك؟"
+
+#: careers/careers/templates/registration/delete.html:23
+msgid "This action is destructive!"
+msgstr "هذا الإجراء مدمر!"
+
+#: careers/careers/templates/registration/logged_out.html:4
+msgid "Logged out"
+msgstr "تم تسجيل الخروج"
+
+#: careers/careers/templates/registration/logged_out.html:34
+msgid "Logged Out"
+msgstr "تم تسجيل الخروج"
+
+#: careers/careers/templates/registration/logged_out.html:36
+msgid "Thanks for spending some quality time with us today."
+msgstr "شكرًا لقضاء بعض الوقت الثمين معنا اليوم."
+
+#: careers/careers/templates/registration/login.html:36
+msgid "Welcome, please login to continue."
+msgstr "مرحبًا، يرجى تسجيل الدخول للمتابعة."
+
+#: careers/careers/templates/registration/login.html:46
+msgid ""
+"Your account doesn't have access to this page. To proceed, please login with "
+"an account that has access. <!---->"
+msgstr ""
+"ليس لدى حسابك صلاحية الوصول إلى هذه الصفحة. للمتابعة، يرجى تسجيل الدخول "
+"بحساب لديه الصلاحية."
+
+#: careers/careers/templates/registration/login.html:68
+#: careers/careers/templates/registration/signup.html:49
+msgid "Forgot password?"
+msgstr "نسيت كلمة المرور؟"
+
+#: careers/careers/templates/registration/password_change_done.html:4
+msgid "Password Changed"
+msgstr "تم تغيير كلمة المرور"
+
+#: careers/careers/templates/registration/password_change_done.html:8
+#: careers/careers/templates/registration/password_change_form.html:8
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: careers/careers/templates/registration/password_change_done.html:10
+#: careers/careers/templates/registration/password_change_form.html:9
+msgid "Change"
+msgstr "تغيير"
+
+#: careers/careers/templates/registration/password_change_done.html:12
+msgid "Done"
+msgstr "تم"
+
+#: careers/careers/templates/registration/password_change_done.html:19
+msgid "Congrats"
+msgstr "تهانينا"
+
+#: careers/careers/templates/registration/password_change_done.html:22
+msgid "Your password was changed."
+msgstr "تم تغيير كلمة المرور بنجاح."
+
+#: careers/careers/templates/registration/password_change_form.html:4
+msgid "Password Change"
+msgstr "تغيير كلمة المرور"
+
+#: careers/careers/templates/registration/password_change_form.html:16
+msgid "Change password"
+msgstr "تغيير كلمة المرور"
+
+#: careers/careers/templates/registration/password_change_form.html:20
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"يرجى إدخال كلمة المرور القديمة حفاظًا على الأمان، ثم إدخال كلمة المرور "
+"الجديدة مرتين للتأكد من صحتها."
+
+#: careers/careers/templates/registration/password_reset_complete.html:4
+msgid "Password Reset"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: careers/careers/templates/registration/password_reset_complete.html:35
+#: careers/careers/templates/registration/password_reset_confirm.html:4
+#: careers/careers/templates/registration/password_reset_confirm.html:35
+msgid "Password Reset Confirm"
+msgstr "تأكيد إعادة التعيين"
+
+#: careers/careers/templates/registration/password_reset_complete.html:39
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr "تم تعيين كلمة المرور. يمكنك الآن تسجيل الدخول."
+
+#: careers/careers/templates/registration/password_reset_confirm.html:40
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr "يرجى إدخال كلمة المرور الجديدة مرتين للتأكد من صحتها."
+
+#: careers/careers/templates/registration/password_reset_confirm.html:47
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset. <!---->"
+msgstr ""
+"رابط إعادة التعيين غير صالح، ربما لأنه استُخدم مسبقًا. يرجى طلب إعادة تعيين "
+"جديدة."
+
+#: careers/careers/templates/registration/password_reset_done.html:4
+#: careers/careers/templates/registration/password_reset_done.html:34
+msgid "Password Reset Done"
+msgstr "تمت إعادة التعيين"
+
+#: careers/careers/templates/registration/password_reset_done.html:37
+msgid ""
+"We've emailed you instructions for setting your password, if an account "
+"exists with the email you entered. You should receive them shortly."
+msgstr ""
+"أرسلنا لك تعليمات لإعادة تعيين كلمة المرور في حال وجود حساب مرتبط بالبريد "
+"الإلكتروني الذي أدخلته. ستصله قريبًا."
+
+#: careers/careers/templates/registration/password_reset_done.html:42
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"إذا لم تتلقَ البريد، فتأكد من إدخال العنوان المسجل وتحقق من مجلد الرسائل "
+"العشوائية."
+
+#: careers/careers/templates/registration/password_reset_email.html:6
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"لقد تلقيت هذا البريد لأنك طلبت إعادة تعيين كلمة المرور لحسابك في "
+"%(site_name)s."
+
+#: careers/careers/templates/registration/password_reset_email.html:10
+msgid "Please go to the following page and choose a new password:"
+msgstr "يرجى الانتقال إلى الصفحة التالية واختيار كلمة مرور جديدة:"
+
+#: careers/careers/templates/registration/password_reset_email.html:16
+#, fuzzy
+#| msgid "Your username, in case you've forgotten:"
+msgid "Your username, in case you"
+msgstr "اسم المستخدم الخاص بك في حال نسيانه:"
+
+#: careers/careers/templates/registration/password_reset_email.html:18
+msgid "Thanks for using our site!"
+msgstr "شكرًا لاستخدامك موقعنا!"
+
+#: careers/careers/templates/registration/password_reset_email.html:20
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "فريق %(site_name)s"
+
+#: careers/careers/templates/registration/password_reset_form.html:4
+#: careers/careers/templates/registration/password_reset_form.html:34
+#, fuzzy
+#| msgid "Reset Password"
+msgid "Reset password"
+msgstr "إعادة تعيين كلمة المرور"
+
+#: careers/careers/templates/registration/password_reset_form.html:37
+#, fuzzy
+#| msgid ""
+#| "Forgotten your password? Enter your email address below, and we'll email "
+#| "instructions for setting a new one."
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one. <!---->"
+msgstr ""
+"نسيت كلمة المرور؟ أدخل بريدك الإلكتروني أدناه وسنرسل تعليمات لإعادة التعيين."
+
+#: careers/careers/templates/registration/profile.html:33
+msgid "Welcome to your Profile"
+msgstr "مرحبًا بك في ملفك الشخصي"
+
+#: careers/careers/templates/registration/signup.html:36
+msgid "Welcome, please signup to continue."
+msgstr "مرحبًا، يرجى إنشاء حساب للمتابعة."
+
+#: careers/careers/templates/rest_framework/api.html:24
+#: careers/careers/templates/rest_framework/api.html:32
+#, fuzzy
+#| msgid "Django Careers"
+msgid "Django Careers | API"
+msgstr "النبأ اليقين"
+
+#: careers/careers/templates/rest_framework/api.html:47
+#: careers/careers/templates/rest_framework/api.html:54
+#: careers/careers/templates/careers/base.html:136 careers/careers/templates/careers/base.html:143
+#: careers/careers/templates/careers/base.html:781
+msgid "Home"
+msgstr "الرئيسية"
+
+#: careers/careers/templates/rest_framework/api.html:59
+#: careers/careers/templates/rest_framework/api.html:66
+msgid "Pages"
+msgstr "الصقحات"
+
+#: careers/careers/templates/rest_framework/api.html:71
+#: careers/careers/templates/rest_framework/api.html:78
+#, fuzzy
+#| msgid "Image"
+msgid "Images"
+msgstr "صورة"
+
+#: careers/careers/templates/rest_framework/api.html:83
+#: careers/careers/templates/rest_framework/api.html:90
+#, fuzzy
+#| msgid "Document"
+msgid "Documents"
+msgstr "مستند"
+
+#: careers/careers/templates/rest_framework/api.html:95
+#: careers/careers/templates/rest_framework/api.html:102
+#: careers/careers/templates/careers/authors/id.html:40
+#: careers/careers/templates/careers/components/category.html:13
+msgid "Articles"
+msgstr "مقالات"
+
+#: careers/careers/templates/rest_framework/api.html:107
+#: careers/careers/templates/rest_framework/api.html:114
+#: careers/careers/templates/careers/base.html:201 careers/careers/templates/careers/base.html:208
+#: careers/careers/templates/careers/base.html:214 careers/careers/templates/careers/base.html:221
+#: careers/careers/templates/careers/base.html:834 careers/careers/templates/careers/base.html:844
+msgid "Categories"
+msgstr "الفئات"
+
+#: careers/careers/templates/rest_framework/api.html:119
+#: careers/careers/templates/rest_framework/api.html:126
+msgid "Users"
+msgstr "المستخدمون"
+
+#: careers/careers/templates/careers/articles/archive/day.html:11
+#: careers/careers/templates/careers/articles/archive/index.html:11
+#: careers/careers/templates/careers/articles/archive/month.html:11
+#: careers/careers/templates/careers/articles/archive/year.html:11
+#: careers/careers/templates/careers/articles/id.html:18
+#: careers/careers/templates/careers/articles/id.html:24
+#: careers/careers/templates/careers/articles/id.html:28
+#: careers/careers/templates/careers/articles/id.html:39
+#: careers/careers/templates/careers/articles/id.html:43 careers/careers/templates/careers/base.html:571
+msgid "News"
+msgstr "الأخبار"
+
+#: careers/careers/templates/careers/articles/archive/day.html:18
+#: careers/careers/templates/careers/articles/archive/day.html:28
+#: careers/careers/templates/careers/articles/archive/index.html:18
+#: careers/careers/templates/careers/articles/archive/index.html:28
+#: careers/careers/templates/careers/articles/archive/month.html:18
+#: careers/careers/templates/careers/articles/archive/month.html:28
+#: careers/careers/templates/careers/articles/archive/year.html:18
+#: careers/careers/templates/careers/articles/archive/year.html:28
+#: careers/careers/templates/careers/components/pagination.html:8
+#: careers/careers/templates/careers/components/pagination.html:15
+msgid "Previous"
+msgstr "السابق"
+
+#: careers/careers/templates/careers/articles/archive/day.html:36
+#: careers/careers/templates/careers/articles/archive/day.html:46
+#: careers/careers/templates/careers/articles/archive/index.html:36
+#: careers/careers/templates/careers/articles/archive/index.html:46
+#: careers/careers/templates/careers/articles/archive/month.html:36
+#: careers/careers/templates/careers/articles/archive/month.html:46
+#: careers/careers/templates/careers/articles/archive/year.html:36
+#: careers/careers/templates/careers/articles/archive/year.html:46
+#: careers/careers/templates/careers/components/pagination.html:53
+#: careers/careers/templates/careers/components/pagination.html:63
+msgid "Next"
+msgstr "التالي"
+
+#: careers/careers/templates/careers/articles/archive/day.html:65
+#: careers/careers/templates/careers/articles/archive/month.html:65
+#: careers/careers/templates/careers/articles/list.html:46
+#: careers/careers/templates/careers/authors/id.html:55
+#: careers/careers/templates/careers/blog/index.html:48
+#, fuzzy
+#| msgid "articles"
+msgid "No articles"
+msgstr "مقالات"
+
+#: careers/careers/templates/careers/articles/archive/day.html:66
+#: careers/careers/templates/careers/articles/archive/month.html:66
+msgid "No articles published on"
+msgstr "لم يتم نشر شيء"
+
+#: careers/careers/templates/careers/articles/archive/index.html:4
+#: careers/careers/templates/careers/articles/archive/index.html:11
+#: careers/careers/templates/careers/base.html:855
+msgid "Archive"
+msgstr "الأرشيف"
+
+#: careers/careers/templates/careers/articles/archive/index.html:62
+#: careers/careers/templates/careers/articles/archive/year.html:65
+#: careers/careers/templates/careers/components/article-1.html:8
+#: careers/careers/templates/careers/components/article-2.html:8
+#: careers/careers/templates/careers/components/article.html:14
+msgid "Read"
+msgstr "اقرأ"
+
+#: careers/careers/templates/careers/articles/archive/index.html:76
+#: careers/careers/templates/careers/articles/archive/year.html:79
+msgid "None available"
+msgstr "لا توجد"
+
+#: careers/careers/templates/careers/articles/id.html:78
+#: careers/careers/templates/careers/components/article-1.html:47
+#: careers/careers/templates/careers/components/article-2.html:56
+#: careers/careers/templates/careers/components/article.html:57
+msgid "Category"
+msgstr "الفئة"
+
+#: careers/careers/templates/careers/articles/id.html:91
+#: careers/careers/templates/careers/articles/id.html:97
+#: careers/careers/templates/careers/articles/list.html:11 careers/careers/templates/careers/base.html:167
+#: careers/careers/templates/careers/base.html:177 careers/careers/templates/careers/base.html:433
+#: careers/careers/templates/careers/base.html:443 careers/careers/templates/careers/base.html:813
+#: careers/careers/templates/careers/components/article-1.html:36
+#: careers/careers/templates/careers/components/article-1.html:38
+#: careers/careers/templates/careers/components/article-2.html:44
+#: careers/careers/templates/careers/components/article-2.html:46
+#: careers/careers/templates/careers/components/article.html:45
+#: careers/careers/templates/careers/components/article.html:48
+#: careers/careers/templates/careers/index.html:17
+msgid "Breaking"
+msgstr "عاجل"
+
+#: careers/careers/templates/careers/articles/id.html:153
+#: careers/careers/templates/careers/blog/post.html:86
+msgid "Translations"
+msgstr "الترجمات"
+
+#: careers/careers/templates/careers/articles/id.html:162 careers/careers/templates/careers/base.html:230
+#: careers/careers/templates/careers/base.html:239 careers/careers/templates/careers/base.html:248
+#: careers/careers/templates/careers/blog/post.html:95
+msgid "Language"
+msgstr "اللغة"
+
+#: careers/careers/templates/careers/articles/id.html:171
+#: careers/careers/templates/careers/blog/post.html:104
+msgid "Available in"
+msgstr "متاح في"
+
+#: careers/careers/templates/careers/articles/id.html:186
+#: careers/careers/templates/careers/blog/post.html:119
+msgid "None"
+msgstr "لا شيء"
+
+#: careers/careers/templates/careers/articles/id.html:194
+#: careers/careers/templates/careers/articles/id.html:210
+#: careers/careers/templates/careers/articles/id.html:303
+#, fuzzy
+#| msgid "Copy Link"
+msgid "Copy URL"
+msgstr "نسخ الرابط"
+
+#: careers/careers/templates/careers/articles/id.html:216
+#: careers/careers/templates/careers/articles/id.html:223
+msgid "Facebook"
+msgstr "فيسبوك"
+
+#: careers/careers/templates/careers/articles/id.html:232
+#: careers/careers/templates/careers/components/article-1.html:57
+#: careers/careers/templates/careers/components/article-2.html:67
+#: careers/careers/templates/careers/components/article.html:67
+msgid "Date published"
+msgstr "تاريخ النشر"
+
+#: careers/careers/templates/careers/articles/id.html:274
+msgid "More news from"
+msgstr "المزيد من أخبار"
+
+#: careers/careers/templates/careers/articles/id.html:296
+msgid "Copied"
+msgstr "تم النسخ"
+
+#: careers/careers/templates/careers/articles/list.html:4
+#: careers/careers/templates/careers/articles/list.html:15 careers/careers/templates/careers/index.html:46
+msgid "Latest News"
+msgstr "أحدث الأخبار"
+
+#: careers/careers/templates/careers/articles/list.html:21
+#: careers/careers/templates/careers/articles/list.html:29
+#: careers/careers/templates/careers/articles/list.html:60
+msgid "Filters"
+msgstr "تصفية"
+
+#: careers/careers/templates/careers/articles/list.html:47
+#: careers/careers/templates/careers/authors/id.html:56
+msgid "Published news articles will appear here"
+msgstr "المقالات المنشورة سوف تظهر هنا"
+
+#: careers/careers/templates/careers/authors/id.html:8
+msgid "Authors"
+msgstr "الكتّاب"
+
+#: careers/careers/templates/careers/base.html:15 careers/careers/templates/careers/base.html:24
+#: careers/careers/templates/careers/base.html:28 careers/careers/templates/careers/base.html:48
+#: careers/careers/templates/careers/base.html:52
+msgid "Django Careers - Journalism with Certainty."
+msgstr "النبأ اليقين - صحافة باليقين"
+
+#: careers/careers/templates/careers/base.html:183 careers/careers/templates/careers/base.html:193
+#: careers/careers/templates/careers/base.html:449 careers/careers/templates/careers/base.html:459
+#: careers/careers/templates/careers/base.html:823
+msgid "Latest news"
+msgstr "أحدث الأخبار"
+
+#: careers/careers/templates/careers/base.html:302 careers/careers/templates/careers/base.html:312
+#, fuzzy
+#| msgid "country"
+msgid "Account"
+msgstr "الدولة"
+
+#: careers/careers/templates/careers/base.html:569
+msgid "Services"
+msgstr "الخدمات"
+
+#: careers/careers/templates/careers/base.html:570
+msgid "Ads"
+msgstr "الإعلانات"
+
+#: careers/careers/templates/careers/base.html:574
+msgid "Company"
+msgstr "الشركة"
+
+#: careers/careers/templates/careers/base.html:580 careers/careers/templates/careers/base.html:587
+#: careers/careers/templates/careers/base.html:866 careers/careers/templates/careers/base.html:876
+#: careers/careers/templates/careers/blog/post.html:12 careers/careers/templates/careers/blog/post.html:18
+#: careers/careers/templates/careers/blog/post.html:22 careers/careers/templates/careers/blog/post.html:33
+#: careers/careers/templates/careers/blog/post.html:37
+msgid "Blog"
+msgstr "المدونة"
+
+#: careers/careers/templates/careers/base.html:593 careers/careers/templates/careers/base.html:600
+#: careers/careers/templates/careers/base.html:889 careers/careers/templates/careers/base.html:899
+msgid "About us"
+msgstr "من نحن"
+
+#: careers/careers/templates/careers/base.html:606 careers/careers/templates/careers/base.html:613
+#: careers/careers/templates/careers/base.html:912 careers/careers/templates/careers/base.html:922
+msgid "Contact us"
+msgstr "اتصل بنا"
+
+#: careers/careers/templates/careers/base.html:618
+msgid "Legal"
+msgstr "القانونية"
+
+#: careers/careers/templates/careers/base.html:620
+msgid "Terms of use"
+msgstr "شروط الاستخدام"
+
+#: careers/careers/templates/careers/base.html:623
+msgid "Privacy policy"
+msgstr "سياسة الخصوصية"
+
+#: careers/careers/templates/careers/base.html:626
+msgid "Cookie policy"
+msgstr "سياسة ملفات تعريف الارتباط"
+
+#: careers/careers/templates/careers/base.html:656
+msgid "Journalism with Certainty"
+msgstr "النبأ اليقين - صحافة باليقين"
+
+#: careers/careers/templates/careers/blog/index.html:32
+msgid "Learn more"
+msgstr "المزيد"
+
+#: careers/careers/templates/careers/blog/index.html:49
+#, fuzzy
+#| msgid "Saved articles"
+msgid "Published blog articles will appear here"
+msgstr "المقالات المحفوظة"
+
+#: careers/careers/templates/careers/components/form.html:28
+msgid "Submit"
+msgstr "إرسال"
+
+#: careers/careers/templates/careers/components/pagination.html:21
+#: careers/careers/templates/careers/components/pagination.html:24
+msgid "First"
+msgstr "الأول"
+
+#: careers/careers/templates/careers/components/pagination.html:31
+msgid "Current"
+msgstr "الحالي"
+
+#: careers/careers/templates/careers/components/pagination.html:41
+#: careers/careers/templates/careers/components/pagination.html:47
+msgid "Last"
+msgstr "الأخير"
+
+#: careers/careers/templates/careers/index.html:30
+msgid "Trending now"
+msgstr "يتصدر الآن"
+
+#: careers/careers/templates/careers/search.html:33
+msgid "Go"
+msgstr "اذهب"
+
+#: careers/careers/templates/careers/search.html:40
+msgid "Search results"
+msgstr "نتائج البحث"
+
+#: careers/careers/templates/careers/search.html:49
+msgid "No results found"
+msgstr "لا توجد نتائج"
+
+#: careers/careers/views.py:39
+msgid "Your account was created successfully!"
+msgstr "تم إنشاء حسابك بنجاح"
+
+#: careers/careers/views.py:73
+msgid "Your account was updated successfully!"
+msgstr "تم تحديث حسابك بنجاح"
+
+#: careers/careers/views.py:97
+msgid "Your account was deleted successfully!"
+msgstr "تم حذف حسابك بنجاح"

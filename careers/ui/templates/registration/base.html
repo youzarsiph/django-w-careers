@@ -1,0 +1,253 @@
+{% extends 'careers/base.html' %}{% load i18n wagtailcore_tags %}
+
+<!---->
+{% block title %}{{ block.super }} | {% trans 'Profile' %}{% endblock %}
+
+<!---->
+{% block navbar %}{% endblock %}
+
+<!---->
+{% block content %}
+<div class="drawer drawer-end lg:drawer-open">
+  <input id="profile-drawer" type="checkbox" class="drawer-toggle sr-only" />
+
+  <div
+    class="drawer-content size-full overflow-y-auto lg:max-h-[calc(100dvh-1rem)]"
+  >
+    <div class="relative container py-20 px-4 lg:px-8 mx-auto">
+      <main class="flex flex-col gap-4 lg:gap-6">
+        <header
+          class="absolute inset-x-0 top-0 z-40 px-2 backdrop-blur-3xl lg:px-4"
+        >
+          <nav class="navbar p-0">
+            <ol class="navbar-start gap-4">
+              <li
+                class="tooltip tooltip-right rtl:tooltip-left tooltip-primary aspect-square"
+                data-tip="{% trans 'Open drawer' %}"
+              >
+                <label
+                  for="nav-drawer"
+                  aria-label="{% trans 'close sidebar' %}"
+                  class="btn btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
+                >
+                  <i data-lucide="menu" class="size-4 md:size-6"></i>
+                  <span class="sr-only">{% trans 'Open drawer' %}</span>
+                </label>
+              </li>
+
+              {% block brand %}
+              <li
+                class="tooltip tooltip-right rtl:tooltip-left tooltip-primary aspect-square"
+                data-tip="{% trans 'Django Careers' %}"
+              >
+                <h1 class="relative">
+                  <a
+                    href="{% pageurl home %}"
+                    class="btn btn-square btn-primary lg:btn-lg"
+                  >
+                    <div
+                      class="btn btn-square btn-primary lg:btn-lg rotate-45 p-0 shadow-none"
+                    >
+                      <i
+                        data-lucide="briefcase-business"
+                        class="-rotate-45 lg:size-8 2xl:size-10"
+                      ></i>
+                    </div>
+                    <span class="sr-only">{% trans 'Django Careers' %}</span>
+                  </a>
+                </h1>
+              </li>
+              {% endblock %}
+            </ol>
+
+            <div class="navbar-end gap-2">
+              {% if request.user.is_authenticated %}
+              <div
+                class="tooltip tooltip-left rtl:tooltip-right tooltip-primary"
+                data-tip="{% trans 'Profile' %}"
+              >
+                <a
+                  href="{% url 'careers:profile' %}"
+                  class="btn btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
+                >
+                  <i data-lucide="user" class="size-4 md:size-6"></i>
+                  <span class="sr-only">{% trans 'Profile' %}</span>
+                </a>
+              </div>
+              {% else %}
+              <div
+                class="tooltip tooltip-left rtl:tooltip-right tooltip-primary"
+                data-tip="{% trans 'Log in' %}"
+              >
+                <a
+                  href="{% url 'careers:login' %}"
+                  class="btn btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
+                >
+                  <i data-lucide="log-in" class="size-4 md:size-6"></i>
+                  <span class="sr-only">{% trans 'Log in' %}</span>
+                </a>
+              </div>
+              <div
+                class="tooltip tooltip-left rtl:tooltip-right tooltip-success"
+                data-tip="{% trans 'Sign up' %}"
+              >
+                <a
+                  href="{% url 'careers:signup' %}"
+                  class="btn btn-square btn-soft btn-sm btn-success md:btn-md 2xl:btn-lg"
+                >
+                  <i data-lucide="heart-handshake" class="size-4 md:size-6"></i>
+                  <span class="sr-only">{% trans 'Sign up' %}</span>
+                </a>
+              </div>
+              {% endif %}
+
+              <div
+                class="tooltip tooltip-left rtl:tooltip-right tooltip-primary"
+                data-tip="{% trans 'Search' %}"
+              >
+                <a
+                  href="{% url 'careers:search' %}"
+                  class="btn btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
+                >
+                  <i data-lucide="search" class="size-4 md:size-6"></i>
+                  <span class="sr-only">{% trans 'Search' %}</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <nav class="flex items-center gap-4">
+          <div
+            class="tooltip tooltip-right tooltip-primary rtl:tooltip-left lg:hidden"
+            data-tip="{% trans 'Open drawer' %}"
+          >
+            <label
+              for="profile-drawer"
+              aria-label="{% trans 'Open drawer' %}"
+              class="btn btn-sm btn-square btn-soft btn-primary lg:btn-md"
+            >
+              <i data-lucide="menu" class="size-4 lg:size-6"></i>
+              <span class="sr-only">{% trans 'Open drawer' %}</span>
+            </label>
+          </div>
+          <div class="breadcrumbs p-0">
+            <ol>
+              <li>
+                <a href="{% url 'careers:profile' %}">{% trans 'Profile' %}</a>
+              </li>
+              {% block breadcrumbs %}{% endblock %}
+            </ol>
+          </div>
+        </nav>
+
+        {% block main_content %}{% endblock %}
+      </main>
+    </div>
+  </div>
+
+  <div
+    class="drawer-side z-50 md:min-w-xs lg:min-w-sm xl:min-w-md 2xl:min-w-lg lg:z-20 lg:max-h-[calc(100dvh-1rem)]"
+  >
+    <label
+      for="profile-drawer"
+      aria-label="{% trans 'Close drawer' %}"
+      class="drawer-overlay"
+    ></label>
+
+    <section
+      class="bg-base-100/75 dark:bg-base-100/50 flex size-full flex-col justify-between overflow-hidden overflow-y-auto backdrop-blur-3xl sm:w-10/12 md:w-8/12 lg:w-full lg:bg-base-200"
+    >
+      <header class="flex items-center justify-between gap-4 p-4">
+        {% block drawer_brand %}
+        <div
+          class="tooltip tooltip-right rtl:tooltip-left tooltip-primary tooltip-open"
+          data-tip="{% trans 'Profile' %}"
+        >
+          <h1 class="relative">
+            <a
+              href="{% url 'careers:profile' %}"
+              class="btn btn-square btn-primary lg:btn-lg"
+            >
+              <div
+                class="btn btn-square btn-primary lg:btn-lg rotate-45 p-0 shadow-none"
+              >
+                <i
+                  data-lucide="briefcase-business"
+                  class="-rotate-45 lg:size-8 2xl:size-10"
+                ></i>
+              </div>
+              <span class="sr-only">{% trans 'Django Careers' %}</span>
+            </a>
+          </h1>
+        </div>
+        {% endblock %}
+
+        <div
+          class="tooltip tooltip-left rtl:tooltip-right hover:tooltip-error lg:hidden"
+          data-tip="{% trans 'Close' %}"
+        >
+          <label
+            for="profile-drawer"
+            aria-label="{% trans 'Close drawer' %}"
+            class="btn btn-square btn-soft btn-sm btn-primary hover:btn-error lg:btn-md"
+          >
+            <i data-lucide="x" class="size-4 lg:size-6"></i>
+            <span class="sr-only">{% trans 'Close' %}</span>
+          </label>
+        </div>
+      </header>
+
+      <nav class="menu menu-vertical gap-2 size-full justify-between p-4">
+        <ul class="menu menu-vertical gap-2 w-full p-0">
+          {% block drawer_content %}
+          <li>
+            <a
+              href="{% url 'careers:profile' %}"
+              class="btn btn-ghost btn-primary justify-start gap-4 w-full"
+            >
+              <i data-lucide="user" class="size-4 lg:size-6"></i>
+              <span>{% trans 'Profile' %}</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="{% url 'careers:u-user' request.user.id %}"
+              class="btn btn-ghost btn-primary justify-start gap-4 w-full"
+            >
+              <i data-lucide="user-cog" class="size-4 lg:size-6"></i>
+              <span>{% trans 'Settings' %}</span>
+            </a>
+          </li>
+          {% endblock %}
+        </ul>
+
+        <ul class="mt-auto menu menu-vertical gap-2 w-full p-0">
+          <li>
+            <a
+              href="{% url 'careers:d-user' request.user.id %}"
+              class="btn btn-soft btn-error justify-start gap-4 w-full"
+            >
+              <i data-lucide="user-x" class="size-4 lg:size-6"></i>
+              <span>{% trans 'Delete account' %}</span>
+            </a>
+          </li>
+          <li>
+            <button
+              form="logout"
+              type="submit"
+              class="btn btn-ghost btn-primary justify-start gap-4 w-full"
+            >
+              <i data-lucide="log-out" class="size-4 lg:size-6"></i>
+              <span>{% trans 'Log out' %}</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+</div>
+{% endblock %}
+
+<!---->
+{% block footer %}{% endblock %}

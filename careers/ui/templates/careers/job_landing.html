@@ -1,0 +1,104 @@
+{% extends 'careers/job.html' %}{% load i18n wagtailcore_tags %}
+
+<!---->
+{% block content %}
+<div class="container mx-auto px-4 py-20">
+  <section class="grid gap-8">
+    {% include 'careers/components/breadcrumbs.html' %}
+
+    <div class="flex items-center flex-wrap gap-1">
+      <div class="tooltip tooltip-primary" data-tip="{% trans 'Category' %}">
+        <a
+          href="{% pageurl job.get_parent %}"
+          class="badge badge-soft badge-primary badge-sm md:badge-md"
+        >
+          <i data-lucide="layers" class="size-4"></i>
+          {{ job.get_parent }}
+        </a>
+      </div>
+
+      {% if job.country %}
+      <div class="tooltip tooltip-success" data-tip="{% trans 'Country' %}">
+        <a
+          href="{% url 'careers:jobs' %}?country={{ job.country }}"
+          class="badge badge-success badge-sm md:badge-md"
+        >
+          <i data-lucide="map-pin-house" class="size-4"></i>
+          {{ job.country.name }}
+        </a>
+      </div>
+      {% endif %}
+
+      <!---->
+      {% if job.is_remote %}
+      <div class="tooltip tooltip-primary" data-tip="{% trans 'Location' %}">
+        <a
+          href="{% url 'careers:jobs' %}?is_remote=True"
+          class="badge badge-primary badge-sm md:badge-md"
+        >
+          <i data-lucide="laptop-minimal" class="size-4"></i>
+          {% trans 'Remote' %}
+        </a>
+      </div>
+      {% endif %}
+
+      <div
+        class="tooltip tooltip-secondary"
+        data-tip="{% trans 'Seniority level' %}"
+      >
+        <a
+          href="{% url 'careers:jobs' %}?level={{ job.level }}"
+          class="badge badge-secondary badge-sm md:badge-md"
+        >
+          {{ job.level }}
+        </a>
+      </div>
+
+      <div class="tooltip tooltip-info" data-tip="{% trans 'Job type' %}">
+        <a
+          href="{% url 'careers:jobs' %}?type={{ job.type }}"
+          class="badge badge-info badge-sm md:badge-md"
+        >
+          {{ job.type }}
+        </a>
+      </div>
+    </div>
+
+    <div
+      class="prose mx-auto prose-sm prose-video:rounded-box xl:prose-lg 2xl:prose-xl prose-headings:text-primary prose-img:rounded-box prose-img:w-full prose-pre:bg-base-200 prose-pre:border prose-pre:border-base-300"
+    >
+      <h1>{{ job.title }}</h1>
+
+      <div class="not-prose">
+        <div role="alert" class="alert alert-soft alert-success">
+          <div
+            class="tooltip tooltip-right rtl:tooltip-left tooltip-success"
+            data-tip="{% trans 'Success' %}"
+          >
+            <span class="btn btn-xs btn-circle btn-success md:btn-sm">
+              <i class="size-4 md:size-6" data-lucide="check-circle2"></i>
+              <span class="sr-only">{% trans 'Success' %}</span>
+            </span>
+          </div>
+
+          {{ job.message|richtext }}
+        </div>
+      </div>
+
+      <p>{{ job.description }}</p>
+
+      {{ job.details }}
+
+      <div class="not-prose flex mx-auto flex-wrap items-center gap-4">
+        {% for skill in job.skills.all %}
+        <span
+          class="badge {% cycle 'badge-primary' 'badge-secondary' 'badge-success' 'badge-info' 'badge-warning' 'badge-error' %}"
+        >
+          {{ skill }}
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

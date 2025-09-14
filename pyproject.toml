@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "django-careers"
+version = "0.1.0"
+description = "A reusable, production-ready job posting application (One employer) built with Python, Django, Django REST Framework, and Wagtail CMS, styled with Tailwind CSS and daisyUI. It provides modern theming, optional APIs, and sensible defaults."
+authors = ["Yousef Abu Shanab <josephyousef249@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "careers" }]
+homepage = "https://github.com/youzarsiph/django-careers"
+repository = "https://github.com/youzarsiph/django-careers"
+documentation = "https://github.com/youzarsiph/django-careers"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+django = ">=5.2.1"
+django-countries = ">=7.6.1"
+django-filters = ">=25.1"
+djangorestframework = ">=3.16.0"
+drf-restwind = ">=0.2.0"
+wagtail = ">=7.0"
+
+[tool.poetry.group.dev.dependencies]
+django-debug-toolbar = ">=6.0.0"
+black = ">=25.1.0"
+ruff = ">=0.11.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
