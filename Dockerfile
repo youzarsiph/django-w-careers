@@ -23,6 +23,7 @@ RUN echo "INSTALLED_APPS += [" >> core/settings.py
 RUN echo "    'careers'," >> core/settings.py
 RUN echo "    'careers.apps.categories'," >> core/settings.py
 RUN echo "    'careers.apps.home'," >> core/settings.py
+RUN echo "    'careers.apps.indexes'," >> core/settings.py
 RUN echo "    'careers.apps.jobs'," >> core/settings.py
 RUN echo "    'careers.apps.tags'," >> core/settings.py
 RUN echo "    'careers.cms'," >> core/settings.py
@@ -54,7 +55,7 @@ RUN echo "from wagtail import urls as wagtail_urls" >> core/urls.py
 RUN echo "from wagtail.admin import urls as wagtailadmin_urls" >> core/urls.py
 RUN echo "from wagtail.documents import urls as wagtaildocs_urls" >> core/urls.py
 RUN echo "urlpatterns += [" >> core/urls.py
-RUN echo "    path('', include('careers.ui.urls', namespace='ui'))," >> core/urls.py
+RUN echo "    path('', include('careers.ui.urls', namespace='careers'))," >> core/urls.py
 RUN echo "    path('api/', include('careers.api.urls'))," >> core/urls.py
 RUN echo "    path('api/', include('rest_framework.urls'))," >> core/urls.py
 RUN echo "    path('documents/', include(wagtaildocs_urls))," >> core/urls.py

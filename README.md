@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     "careers",
     "careers.api",            # Optional: REST API
     "careers.apps.categories",
-    "careers.apps.home",
+    "careers.apps.home",      # Optional: If you have a Home model ('home.Home')
+    "careers.apps.indexes",
     "careers.apps.jobs",
     "careers.apps.tags",
     "careers.cms",
@@ -135,7 +136,7 @@ You can extend or override any provided template for full control.
 
 - **`careers/index.html`**  
   - Blocks: all from `careers/base.html`  
-  - Context: `index` (jobs index page), `articles` (latest postings)
+  - Context: `index` (jobs index page), `jobs` (latest postings)
 
 - **`careers/category_index.html`**  
   - Blocks: all from `careers/base.html`  

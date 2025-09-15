@@ -1,6 +1,184 @@
 {% extends 'careers/base.html' %}{% load i18n wagtailcore_tags %}
-
 <!---->
 {% block content %}
-<div class="container grid gap-16 mx-auto px-4 py-20"></div>
+<section class="container grid gap-12 mx-auto px-4 py-20">
+  {% include 'careers/components/breadcrumbs.html' %}
+
+  <div
+    class="mx-auto prose prose-sm prose-video:rounded-box xl:prose-lg 2xl:prose-xl prose-headings:text-primary prose-img:rounded-box prose-img:w-full"
+  >
+    <h1>{{ index.title }}</h1>
+
+    {{ index.content }}
+  </div>
+
+  <section class="grid gap-8">
+    <h1 class="text-primary font-bold text-2xl lg:text-4xl">
+      {% trans 'Latest Jobs' %}
+    </h1>
+
+    <ol class="grid grid-cols-12 gap-4">
+      {% for job in jobs %}
+      <li
+        role="article"
+        class="group col-span-12 row-span-12 md:col-span-6 md:row-span-3 lg:col-span-4 2xl:col-span-3"
+      >
+        <div
+          class="card border border-base-300 relative bg-base-100 hover:bg-base-200 card-sm md:card-md xl:card-lg 2xl:card-xl size-full shadow"
+        >
+          <a href="{% pageurl job %}" class="absolute inset-0 z-10">
+            <span class="sr-only">{% trans 'View' %}</span>
+          </a>
+
+          <div class="card-body p-4">
+            <h2 class="card-title text-primary">{{ job.title }}</h2>
+
+            <p class="grow-0">{{ job.description }}</p>
+
+            <div class="card-actions items-center">
+              <div
+                class="tooltip tooltip-primary z-20"
+                data-tip="{% trans 'Category' %}"
+              >
+                <a
+                  href="{% pageurl job.get_parent %}"
+                  class="badge badge-soft badge-primary badge-xs md:badge-sm"
+                >
+                  {{ job.get_parent }}
+                </a>
+              </div>
+
+              {% if job.is_remote %}
+              <div
+                class="tooltip tooltip-primary z-20"
+                data-tip="{% trans 'Remote' %}"
+              >
+                <a
+                  href="{% url 'careers:jobs' %}?is_remote=True"
+                  class="badge badge-primary badge-xs md:badge-sm"
+                >
+                  {% trans 'Remote' %}
+                </a>
+              </div>
+              {% endif %}
+
+              <!---->
+              {% if job.country %}
+              <div
+                class="tooltip tooltip-success z-20"
+                data-tip="{{ job.country.name }}"
+              >
+                <a
+                  href="{% url 'careers:jobs' %}?country={{ job.country }}"
+                  class="badge badge-success badge-xs md:badge-sm"
+                >
+                  {{ job.country }}
+                </a>
+              </div>
+              {% endif %}
+
+              <div
+                class="tooltip tooltip-secondary z-20"
+                data-tip="{% trans 'Seniority level' %}"
+              >
+                <a
+                  href="{% url 'careers:jobs' %}?level={{ job.level }}"
+                  class="badge badge-secondary badge-xs md:badge-sm"
+                >
+                  {{ job.level }}
+                </a>
+              </div>
+
+              <div
+                class="tooltip tooltip-info z-20"
+                data-tip="{% trans 'Job type' %}"
+              >
+                <a
+                  href="{% url 'careers:jobs' %}?type={{ job.type }}"
+                  class="badge badge-info badge-xs md:badge-sm"
+                >
+                  {{ job.type }}
+                </a>
+              </div>
+
+              <span
+                class="tooltip tooltip-primary z-20"
+                data-tip="{% trans 'Date published' %}"
+              >
+                <span
+                  class="badge badge-soft badge-xs md:badge-sm badge-primary"
+                >
+                  {{ job.latest_revision_created_at|date:'Y/m/d' }}
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </li>
+      {% empty %}
+      <li
+        role="article"
+        class="card bg-base-300 card-sm shadow-sm md:card-md xl:card-lg 2xl:card-xl col-span-12 md:col-span-6 lg:col-span-4 2xl:col-span-3"
+      >
+        <div class="card-body">
+          <h2 class="card-title text-primary">{% trans 'No Jobs' %}</h2>
+
+          <p class="grow-0">{% trans 'Latest Jobs will appear here.' %}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="grid gap-8">
+    <h1 class="text-primary font-bold text-2xl lg:text-4xl">
+      {% trans 'Categories' %}
+    </h1>
+
+    <ol class="grid grid-cols-12 gap-4">
+      {% for page in index.get_children.specific %}
+      <li
+        role="article"
+        class="relative card border border-base-300 bg-base-100 hover:bg-base-200 card-sm md:card-md xl:card-lg 2xl:card-xl col-span-12 size-full shadow-sm md:col-span-6 lg:col-span-4 2xl:col-span-3"
+      >
+        <a href="{% pageurl page %}" class="absolute inset-0">
+          <span class="sr-only">{% trans 'Read' %}</span>
+        </a>
+
+        <div class="card-body">
+          <h2 class="card-title text-primary">{{ page.title }}</h2>
+
+          <p class="grow-0">{{ page.description }}</p>
+        </div>
+      </li>
+      {% empty %}
+      <li
+        role="article"
+        class="card bg-base-300 card-sm shadow-sm md:card-md xl:card-lg 2xl:card-xl col-span-12 md:col-span-6 lg:col-span-4 2xl:col-span-3"
+      >
+        <div class="card-body">
+          <h2 class="card-title text-primary">{% trans 'No categories' %}</h2>
+
+          <p class="grow-0">
+            {% trans 'Published categories will appear here.' %}
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+</section>
+{% endblock %}
+
+<!---->
+{% block drawer_content %}
+<li>
+  <a href="{% pageurl index.get_parent %}">{{ index.get_parent.title }}</a>
+</li>
+{% for page in index.get_children %}
+<li>
+  <a href="{% pageurl page %}">{{ page.title }}</a>
+</li>
+{% endfor %}
+<!---->
 {% endblock %}
