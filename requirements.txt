@@ -2,7 +2,7 @@
 django
 django-countries
 django-debug-toolbar
-django-filters
+django-filter
 djangorestframework
 drf-restwind
 wagtail
