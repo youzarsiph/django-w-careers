@@ -1,14 +1,14 @@
 [tool.poetry]
-name = "django-careers"
+name = "django-w-careers"
 version = "0.1.0"
 description = "A reusable, production-ready job posting application (One employer) built with Python, Django, Django REST Framework, and Wagtail CMS, styled with Tailwind CSS and daisyUI. It provides modern theming, optional APIs, and sensible defaults."
 authors = ["Yousef Abu Shanab <josephyousef249@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{ include = "careers" }]
-homepage = "https://github.com/youzarsiph/django-careers"
-repository = "https://github.com/youzarsiph/django-careers"
-documentation = "https://github.com/youzarsiph/django-careers"
+homepage = "https://github.com/youzarsiph/django-w-careers"
+repository = "https://github.com/youzarsiph/django-w-careers"
+documentation = "https://github.com/youzarsiph/django-w-careers"
 
 [tool.poetry.dependencies]
 python = ">=3.10"

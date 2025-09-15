@@ -1,15 +1,15 @@
-# django-careers
+# django-w-careers
 
-[![CI](https://github.com/youzarsiph/django-careers/actions/workflows/ci.yml/badge.svg)](https://github.com/youzarsiph/django-careers/actions/workflows/ci.yml)
-[![CD](https://github.com/youzarsiph/django-careers/actions/workflows/cd.yml/badge.svg)](https://github.com/youzarsiph/django-careers/actions/workflows/cd.yml)
-[![Code Style: Black](https://github.com/youzarsiph/django-careers/actions/workflows/black.yml/badge.svg)](https://github.com/youzarsiph/django-careers/actions/workflows/black.yml)
-[![Code Linting: Ruff](https://github.com/youzarsiph/django-careers/actions/workflows/ruff.yml/badge.svg)](https://github.com/youzarsiph/django-careers/actions/workflows/ruff.yml)
-[![Docker Image](https://github.com/youzarsiph/django-careers/actions/workflows/docker-image.yml/badge.svg)](https://github.com/youzarsiph/django-careers/actions/workflows/docker-image.yml)
-[![Docker Publish](https://github.com/youzarsiph/django-careers/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/youzarsiph/django-careers/actions/workflows/docker-publish.yml)
-[![PyPI - Version](https://img.shields.io/pypi/v/django-careers?logo=pypi&logoColor=white)](https://pypi.org/project/django-careers/)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-careers?logo=python&logoColor=white)](https://pypi.org/project/django-careers/)
-[![PyPI - Downloads](https://img.shields.io/pypi/dm/django-careers?logo=pypi&logoColor=white)](https://pypi.org/project/django-careers/)
-[![PyPI - License](https://img.shields.io/pypi/l/django-careers?logo=pypi&logoColor=white)](https://pypi.org/project/django-careers/)
+[![CI](https://github.com/youzarsiph/django-w-careers/actions/workflows/ci.yml/badge.svg)](https://github.com/youzarsiph/django-w-careers/actions/workflows/ci.yml)
+[![CD](https://github.com/youzarsiph/django-w-careers/actions/workflows/cd.yml/badge.svg)](https://github.com/youzarsiph/django-w-careers/actions/workflows/cd.yml)
+[![Code Style: Black](https://github.com/youzarsiph/django-w-careers/actions/workflows/black.yml/badge.svg)](https://github.com/youzarsiph/django-w-careers/actions/workflows/black.yml)
+[![Code Linting: Ruff](https://github.com/youzarsiph/django-w-careers/actions/workflows/ruff.yml/badge.svg)](https://github.com/youzarsiph/django-w-careers/actions/workflows/ruff.yml)
+[![Docker Image](https://github.com/youzarsiph/django-w-careers/actions/workflows/docker-image.yml/badge.svg)](https://github.com/youzarsiph/django-w-careers/actions/workflows/docker-image.yml)
+[![Docker Publish](https://github.com/youzarsiph/django-w-careers/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/youzarsiph/django-w-careers/actions/workflows/docker-publish.yml)
+[![PyPI - Version](https://img.shields.io/pypi/v/django-w-careers?logo=pypi&logoColor=white)](https://pypi.org/project/django-w-careers/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-w-careers?logo=python&logoColor=white)](https://pypi.org/project/django-w-careers/)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/django-w-careers?logo=pypi&logoColor=white)](https://pypi.org/project/django-w-careers/)
+[![PyPI - License](https://img.shields.io/pypi/l/django-w-careers?logo=pypi&logoColor=white)](https://pypi.org/project/django-w-careers/)
 
 ## Overview
 
@@ -35,7 +35,7 @@ A reusable, production-ready job posting application (One employer) built with P
 ## Installation
 
 ```bash
-pip install django-careers
+pip install django-w-careers
 ```
 
 ---
@@ -111,7 +111,7 @@ urlpatterns = [
 
 ## Theming and templates
 
-All templates in django-careers extend `careers/base.html`. Create and customize this base template to match your brand.
+All templates in django-w-careers extend `careers/base.html`. Create and customize this base template to match your brand.
 
 ### Create the template directory
 
@@ -171,7 +171,7 @@ We welcome contributions from the community. Please review our [CONTRIBUTING](CO
 
 ## Support
 
-For questions, bug reports, or feature requests, open an issue or start a thread in [GitHub Discussions](https://github.com/youzarsiph/django-careers/discussions).
+For questions, bug reports, or feature requests, open an issue or start a thread in [GitHub Discussions](https://github.com/youzarsiph/django-w-careers/discussions).
 
 ---
 
