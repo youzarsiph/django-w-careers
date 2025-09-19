@@ -1,4 +1,5 @@
 {% extends 'careers/base.html' %}{% load i18n wagtailcore_tags %}
+
 <!---->
 {% block content %}
 <section class="container grid gap-12 mx-auto px-4 py-20">
@@ -148,7 +149,7 @@
         <div class="card-body">
           <h2 class="card-title text-primary">{{ page.title }}</h2>
 
-          <p class="grow-0">{{ page.description }}</p>
+          <p class="grow-0">{{ page.description|richtext }}</p>
         </div>
       </li>
       {% empty %}

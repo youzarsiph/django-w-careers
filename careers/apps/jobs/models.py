@@ -12,7 +12,7 @@ from wagtail.fields import RichTextField, StreamField
 from wagtail.search import index
 
 from careers.apps.jobs import JOB_SENIORITY_LEVELS, JOB_TYPES
-from careers.cms.blocks import MediaBlock
+from careers.cms.blocks import AllBlocks
 
 
 # Create your models here.
@@ -73,7 +73,7 @@ class AbstractJob(AbstractEmailForm):
         help_text=_("Job description"),
     )
     details = StreamField(
-        MediaBlock(),
+        AllBlocks(),
         verbose_name=_("details"),
         help_text=_("Job details"),
     )

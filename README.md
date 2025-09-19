@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     # Dependencies
     "rest_wind",              # Optional: REST API
     "rest_framework",         # Optional: REST API
+    "wagtail_blocks",
     "django_countries",
     "django_filters",
     "wagtail.contrib.search_promotions",

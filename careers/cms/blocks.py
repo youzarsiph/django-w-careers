@@ -5,12 +5,14 @@ from wagtail import blocks
 from wagtail.documents.blocks import DocumentChooserBlock
 from wagtail.embeds.blocks import EmbedBlock
 from wagtail.images.blocks import ImageBlock
+from wagtail_blocks import blocks as wagtail_blocks
 
 
 # Create your blocks here.
 class TextBlock(blocks.StreamBlock):
     """Custom StreamBlock for Text content"""
 
+    code = wagtail_blocks.CodeBlock(help_text=_("Code"))
     quote = blocks.BlockQuoteBlock(help_text=_("Quote"))
     paragraph = blocks.RichTextBlock(help_text=_("Rich Text"))
 
@@ -21,3 +23,12 @@ class MediaBlock(TextBlock):
     video = EmbedBlock(help_text=_("Video"))
     image = ImageBlock(help_text=_("Image"))
     document = DocumentChooserBlock(help_text=_("Document"))
+
+
+class AllBlocks(MediaBlock):
+    """All blocks included"""
+
+    accordion = wagtail_blocks.AccordionBlock(help_text=_("Accordion"))
+    alert = wagtail_blocks.AlertBlock(help_text=_("Alert"))
+    carousel = wagtail_blocks.CarouselBlock(help_text=_("Carousel"))
+    diff = wagtail_blocks.DiffBlock(help_text=_("Diff"))

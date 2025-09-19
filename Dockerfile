@@ -28,6 +28,7 @@ RUN echo "    'careers.apps.jobs'," >> core/settings.py
 RUN echo "    'careers.apps.tags'," >> core/settings.py
 RUN echo "    'careers.cms'," >> core/settings.py
 RUN echo "    'careers.ui'," >> core/settings.py
+RUN echo "    'wagtail_blocks'," >> core/settings.py
 RUN echo "    'django_countries'," >> core/settings.py
 RUN echo "    'django_filters'," >> core/settings.py
 RUN echo "    'rest_wind'," >> core/settings.py

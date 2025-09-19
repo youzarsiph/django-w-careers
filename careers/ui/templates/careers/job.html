@@ -1,7 +1,16 @@
-{% extends 'careers/base.html' %}{% load i18n wagtailcore_tags %}
+{% extends 'careers/base.html' %}{% load i18n static wagtailcore_tags %}
 
 <!---->
 {% block title %}{{ block.super }} | {{ job.title }}{% endblock %}
+
+<!---->
+{% block styles %}
+<link
+  href="{% static 'wagtail_blocks/css/styles.css' %}"
+  rel="stylesheet"
+  type="text/css"
+/>
+{{ block.super }}{% endblock %}
 
 <!---->
 {% block content %}
