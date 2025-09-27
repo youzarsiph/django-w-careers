@@ -28,11 +28,13 @@ class AbstractJob(AbstractEmailForm):
     """Abstract class for extension"""
 
     type = models.CharField(
+        max_length=16,
         choices=JOB_TYPES,
         verbose_name=_("type"),
         help_text=_("Job type"),
     )
     level = models.CharField(
+        max_length=16,
         choices=JOB_SENIORITY_LEVELS,
         verbose_name=_("seniority level"),
         help_text=_("Job seniority level"),
