@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-w-careers"
-version = "1.0.3"
+version = "1.0.4"
 description = "A reusable, production-ready job posting application (One employer) built with Python, Django, Django REST Framework, and Wagtail CMS, styled with Tailwind CSS and daisyUI. It provides modern theming, optional APIs, and sensible defaults."
 authors = ["Yousef Abu Shanab <josephyousef249@gmail.com>"]
 license = "MIT"
