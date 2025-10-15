@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html
   lang="{{ LANGUAGE_CODE }}"
-  dir="{% if LANGUAGE_CODE == 'ar' %}rtl{% else %}ltr{% endif %}"
+  dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}"
   data-theme="{% block theme %}luxury{% endblock %}"
 >
   {% get_site_root as home %}
@@ -341,14 +341,6 @@
                     placeholder="{% trans 'Search' %}"
                   />
                 </label>
-
-                <button
-                  type="submit"
-                  class="btn join-item btn-square btn-soft btn-primary"
-                >
-                  <i data-lucide="check-circle2" class="size-4 md:size-6"></i>
-                  <span class="sr-only">{% trans 'Search' %}</span>
-                </button>
               </form>
             </div>
 

@@ -1,7 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# BİR AÇIKLAYICI BAŞLIK.
+# Copyright (C) YIL PAKETİN TELİF HAKKI SAHİBİ
+# Bu dosya PACKAGE paketinin lisansı ile aynı lisans altında dağıtılır.
+# İLK YAZAR <EMAIL@ADDRESS>, YIL.
 #
 #, fuzzy
 msgid ""
@@ -9,75 +9,74 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-14 22:52-0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Arabic <LL@li.org>\n"
-"Language: ar\n"
+"PO-Revision-Date: YIL-AY-GÜN SAAT+BÖLGE\n"
+"Last-Translator: TAM AD <EMAIL@ADDRESS>\n"
+"Language-Team: Türkçe <LL@li.org>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
-"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\careers\apps\categories\models.py:20 .\careers\apps\jobs\models.py:74
 msgid "description"
-msgstr "الوصف"
+msgstr "açıklama"
 
 #: .\careers\apps\categories\models.py:21
 msgid "Category description"
-msgstr "وصف الفئة"
+msgstr "Kategori açıklaması"
 
 #: .\careers\apps\indexes\models.py:20
 msgid "content"
-msgstr "المحتوى"
+msgstr "içerik"
 
 #: .\careers\apps\indexes\models.py:21
 msgid "Page content"
-msgstr "محتوى الصفحة"
+msgstr "Sayfa içeriği"
 
 #: .\careers\apps\jobs\__init__.py:8
 msgid "Full-time"
-msgstr "دوام كامل"
+msgstr "Tam zamanlı"
 
 #: .\careers\apps\jobs\__init__.py:9
 msgid "Part-time"
-msgstr "دوام جزئي"
+msgstr "Yarı zamanlı"
 
 #: .\careers\apps\jobs\__init__.py:10
 msgid "Contract"
-msgstr "عقد"
+msgstr "Sözleşmeli"
 
 #: .\careers\apps\jobs\__init__.py:11
 msgid "Internship"
-msgstr "تدريب"
+msgstr "Staj"
 
 #: .\careers\apps\jobs\__init__.py:12
 msgid "Temporary"
-msgstr "مؤقت"
+msgstr "Geçici"
 
 #: .\careers\apps\jobs\__init__.py:16
 msgid "Junior"
-msgstr "مبتدئ"
+msgstr "Junior"
 
 #: .\careers\apps\jobs\__init__.py:17
 msgid "Mid"
-msgstr "متوسّط"
+msgstr "Orta düzey"
 
 #: .\careers\apps\jobs\__init__.py:18
 msgid "Senior"
-msgstr "خبير"
+msgstr "Senior"
 
 #: .\careers\apps\jobs\__init__.py:19
 msgid "Lead"
-msgstr "قائد"
+msgstr "Lead"
 
 #: .\careers\apps\jobs\__init__.py:20
 msgid "Manager"
-msgstr "مدير"
+msgstr "Yönetici"
 
 #: .\careers\apps\jobs\models.py:33
 msgid "type"
-msgstr "النوع"
+msgstr "tür"
 
 #: .\careers\apps\jobs\models.py:34
 #: .\careers\ui\templates\careers\category.html:93
@@ -86,169 +85,169 @@ msgstr "النوع"
 #: .\careers\ui\templates\careers\job_landing.html:57
 #: .\careers\ui\templates\careers\job_list.html:110
 msgid "Job type"
-msgstr "نوع الوظيفة"
+msgstr "İş türü"
 
 #: .\careers\apps\jobs\models.py:39
 msgid "seniority level"
-msgstr "المستوى الوظيفي"
+msgstr "kıdem düzeyi"
 
 #: .\careers\apps\jobs\models.py:40
 msgid "Job seniority level"
-msgstr "المستوى الوظيفي للوظيفة"
+msgstr "İşin kıdem düzeyi"
 
 #: .\careers\apps\jobs\models.py:45
 msgid "link"
-msgstr "رابط"
+msgstr "bağlantı"
 
 #: .\careers\apps\jobs\models.py:46
 msgid "Job apply link (if external)"
-msgstr "رابط التقديم على الوظيفة (إذا كان خارجيًا)"
+msgstr "İşe başvuru bağlantısı (harici ise)"
 
 #: .\careers\apps\jobs\models.py:50 .\careers\apps\jobs\models.py:55
 msgid "is remote"
-msgstr "عن بُعد"
+msgstr "uzaktan mı"
 
 #: .\careers\apps\jobs\models.py:51
 msgid "Designates if job is remote"
-msgstr "يحدّد ما إذا كانت الوظيفة عن بُعد"
+msgstr "Pozisyonun uzaktan olup olmadığını belirtir"
 
 #: .\careers\apps\jobs\models.py:56
 msgid "Designates if job is open for applications"
-msgstr "يحدّد ما إذا كانت الوظيفة مفتوحة للتقديم"
+msgstr "Pozisyonun başvurulara açık olup olmadığını belirtir"
 
 #: .\careers\apps\jobs\models.py:63
 msgid "salary"
-msgstr "الراتب"
+msgstr "maaş"
 
 #: .\careers\apps\jobs\models.py:64
 msgid "Job salary"
-msgstr "راتب الوظيفة"
+msgstr "İş maaşı"
 
 #: .\careers\apps\jobs\models.py:69
 msgid "country"
-msgstr "الدولة"
+msgstr "ülke"
 
 #: .\careers\apps\jobs\models.py:70 .\careers\ui\templates\careers\job.html:33
 #: .\careers\ui\templates\careers\job_landing.html:21
 msgid "Country"
-msgstr "الدولة"
+msgstr "Ülke"
 
 #: .\careers\apps\jobs\models.py:75
 msgid "Job description"
-msgstr "وصف الوظيفة"
+msgstr "İş tanımı"
 
 #: .\careers\apps\jobs\models.py:79
 msgid "details"
-msgstr "التفاصيل"
+msgstr "ayrıntılar"
 
 #: .\careers\apps\jobs\models.py:80
 msgid "Job details"
-msgstr "تفاصيل الوظيفة"
+msgstr "İş ayrıntıları"
 
 #: .\careers\apps\jobs\models.py:85
 msgid "skills"
-msgstr "المهارات"
+msgstr "yetenekler"
 
 #: .\careers\apps\jobs\models.py:86
 msgid "Required skills"
-msgstr "المهارات المطلوبة"
+msgstr "Gerekli yetenekler"
 
 #: .\careers\apps\jobs\models.py:89
 msgid "message"
-msgstr "رسالة"
+msgstr "ileti"
 
 #: .\careers\apps\jobs\models.py:90
 msgid "Message to display after applying for job"
-msgstr "رسالة تُعرض بعد التقديم على الوظيفة"
+msgstr "İşe başvurduktan sonra gösterilecek ileti"
 
 #: .\careers\apps\jobs\models.py:111
 msgid "Email"
-msgstr "البريد الإلكتروني"
+msgstr "E‑posta"
 
 #: .\careers\apps\mixins.py:80
 msgid "Page is not “last”, nor can it be converted to an int."
-msgstr "الصفحة ليست «الأخيرة»، ولا يمكن تحويلها إلى عدد صحيح."
+msgstr "Sayfa 'last' değil ve tam sayıya dönüştürülemiyor."
 
 #: .\careers\apps\mixins.py:88
 #, python-format
 msgid "Invalid page (%(page_number)s): %(message)s"
-msgstr "صفحة غير صالحة (%(page_number)s): %(message)s"
+msgstr "Geçersiz sayfa (%(page_number)s): %(message)s"
 
 #: .\careers\cms\blocks.py:15
 msgid "Quote"
-msgstr "اقتباس"
+msgstr "Alıntı"
 
 #: .\careers\cms\blocks.py:16
 msgid "Rich Text"
-msgstr "نص منسّق"
+msgstr "Zengin metin"
 
 #: .\careers\cms\blocks.py:22
 msgid "Video"
-msgstr "فيديو"
+msgstr "Video"
 
 #: .\careers\cms\blocks.py:23
 msgid "Image"
-msgstr "صورة"
+msgstr "Görsel"
 
 #: .\careers\cms\blocks.py:24
 msgid "Document"
-msgstr "مستند"
+msgstr "Belge"
 
 #: .\careers\cms\blocks.py:30
 msgid "Code"
-msgstr "كود"
+msgstr "Kod"
 
 #: .\careers\cms\blocks.py:31
 msgid "Accordion"
-msgstr "أكورديون"
+msgstr "Akordeon"
 
 #: .\careers\cms\blocks.py:32
 msgid "Alert"
-msgstr "تنبيه"
+msgstr "Uyarı"
 
 #: .\careers\cms\blocks.py:33
 msgid "Carousel"
-msgstr "عرض شرائح"
+msgstr "Karusel"
 
 #: .\careers\cms\blocks.py:34
 msgid "Diff"
-msgstr "عرض الفروقات"
+msgstr "Fark karşılaştırma"
 
 #: .\careers\cms\blocks.py:35
 msgid "FAB"
-msgstr "زر عائم"
+msgstr "Yüzen eylem düğmesi"
 
 #: .\careers\cms\blocks.py:36
 msgid "List"
-msgstr "قائمة"
+msgstr "Liste"
 
 #: .\careers\cms\blocks.py:37
 msgid "Tabs"
-msgstr "تبويبات"
+msgstr "Sekmeler"
 
 #: .\careers\cms\blocks.py:38
 msgid "Steps"
-msgstr "خطوات"
+msgstr "Adımlar"
 
 #: .\careers\cms\blocks.py:39
 msgid "Timeline"
-msgstr "الجدول الزمني"
+msgstr "Zaman çizelgesi"
 
 #: .\careers\cms\blocks.py:40
 msgid "Toast"
-msgstr "إشعار منبثق"
+msgstr "Toast bildirimi"
 
 #: .\careers\cms\blocks.py:41
 msgid "Browser mockup"
-msgstr "محاكاة المتصفح"
+msgstr "Tarayıcı maketi"
 
 #: .\careers\cms\blocks.py:42
 msgid "Code mockup"
-msgstr "محاكاة الكود"
+msgstr "Kod maketi"
 
 #: .\careers\cms\blocks.py:43
 msgid "Phone mockup"
-msgstr "محاكاة الهاتف"
+msgstr "Telefon maketi"
 
 #: .\careers\ui\templates\careers\base.html:13
 #: .\careers\ui\templates\careers\base.html:87
@@ -262,18 +261,18 @@ msgstr "محاكاة الهاتف"
 #: .\careers\ui\templates\registration\login.html:28
 #: .\careers\ui\templates\rest_framework\api.html:4
 msgid "Django Careers"
-msgstr "وظائف جانغو"
+msgstr "Django Careers"
 
 #: .\careers\ui\templates\careers\base.html:70
 #: .\careers\ui\templates\careers\base.html:79
 msgid "Open drawer"
-msgstr "فتح الدرج"
+msgstr "Çekmeceyi aç"
 
 #: .\careers\ui\templates\careers\base.html:74
 #: .\careers\ui\templates\careers\base.html:273
 #: .\careers\ui\templates\careers\base.html:315
 msgid "close sidebar"
-msgstr "إغلاق الشريط الجانبي"
+msgstr "kenar çubuğunu kapat"
 
 #: .\careers\ui\templates\careers\base.html:119
 #: .\careers\ui\templates\careers\base.html:126
@@ -283,11 +282,11 @@ msgstr "إغلاق الشريط الجانبي"
 #: .\careers\ui\templates\careers\search.html:12
 #: .\careers\ui\templates\careers\search.html:29
 msgid "Search"
-msgstr "بحث"
+msgstr "Arama"
 
 #: .\careers\ui\templates\careers\base.html:134
 msgid "Toggle theme"
-msgstr "تبديل السمة"
+msgstr "Temayı değiştir"
 
 #: .\careers\ui\templates\careers\base.html:169
 msgid ""
@@ -296,34 +295,34 @@ msgid ""
 "Tailwind CSS and daisyUI. It provides modern theming, optional APIs, and "
 "sensible defaults so you can deploy quickly and grow with confidence."
 msgstr ""
-"تطبيق نشر وظائف قابل لإعادة الاستخدام وجاهز للإنتاج (صاحب عمل واحد) مبني باستخدام Python وDjango وDjango REST Framework وWagtail CMS، ومصمم باستخدام Tailwind CSS وdaisyUI. يوفّر سمات حديثة وواجهات برمجة تطبيقات اختيارية وإعدادات افتراضية معقولة لتتمكّن من النشر بسرعة والنمو بثقة."
+"Python, Django, Django REST Framework ve Wagtail CMS ile geliştirilmiş, Tailwind CSS ve daisyUI ile stillendirilmiş, yeniden kullanılabilir ve üretime hazır bir iş ilanı uygulaması (tek işveren). Hızla dağıtım yapmanız ve güvenle büyümeniz için modern temalandırma, isteğe bağlı API’ler ve mantıklı varsayılanlar sunar."
 
 #: .\careers\ui\templates\careers\base.html:189
 #: .\careers\ui\templates\careers\base.html:198
 msgid "Docs"
-msgstr "وثائق"
+msgstr "Belgeler"
 
 #: .\careers\ui\templates\careers\base.html:202
 msgid "Get started with Django Careers"
-msgstr "ابدأ مع وظائف جانغو"
+msgstr "Django Careers ile başlayın"
 
 #: .\careers\ui\templates\careers\base.html:214
 #: .\careers\ui\templates\careers\base.html:223
 msgid "Contribute"
-msgstr "ساهم"
+msgstr "Katkıda bulun"
 
 #: .\careers\ui\templates\careers\base.html:227
 msgid "Please refer to our CONTRIBUTING guide"
-msgstr "يرجى الرجوع إلى دليل المساهمة لدينا"
+msgstr "Lütfen CONTRIBUTING kılavuzumuza bakın"
 
 #: .\careers\ui\templates\careers\base.html:240
 #: .\careers\ui\templates\careers\base.html:249
 msgid "Support"
-msgstr "دعم"
+msgstr "Destek"
 
 #: .\careers\ui\templates\careers\base.html:253
 msgid "For inquiries or support, please open an issue"
-msgstr "للاستفسارات أو الدعم، يرجى فتح بلاغ"
+msgstr "Sorular veya destek için lütfen bir issue açın"
 
 #: .\careers\ui\templates\careers\base.html:311
 #: .\careers\ui\templates\careers\base.html:319
@@ -332,27 +331,27 @@ msgstr "للاستفسارات أو الدعم، يرجى فتح بلاغ"
 #: .\careers\ui\templates\careers\job_list.html:150
 #: .\careers\ui\templates\careers\job_list.html:158
 msgid "Close"
-msgstr "إغلاق"
+msgstr "Kapat"
 
 #: .\careers\ui\templates\careers\base.html:360
 #: .\careers\ui\templates\rest_framework\api.html:45
 #: .\careers\ui\templates\rest_framework\api.html:51
 msgid "Home"
-msgstr "الصفحة الرئيسية"
+msgstr "Ana sayfa"
 
 #: .\careers\ui\templates\careers\base.html:366
 msgid "Package"
-msgstr "الحزمة"
+msgstr "Paket"
 
 #: .\careers\ui\templates\careers\base.html:372
 msgid "Repo"
-msgstr "المستودع"
+msgstr "Depo"
 
 #: .\careers\ui\templates\careers\category.html:29
 #: .\careers\ui\templates\careers\index.html:31
 #: .\careers\ui\templates\careers\job_list.html:46
 msgid "View"
-msgstr "عرض"
+msgstr "Görüntüle"
 
 #: .\careers\ui\templates\careers\category.html:40
 #: .\careers\ui\templates\careers\index.html:42
@@ -360,7 +359,7 @@ msgstr "عرض"
 #: .\careers\ui\templates\careers\job_landing.html:10
 #: .\careers\ui\templates\careers\job_list.html:57
 msgid "Category"
-msgstr "فئة"
+msgstr "Kategori"
 
 #: .\careers\ui\templates\careers\category.html:53
 #: .\careers\ui\templates\careers\category.html:59
@@ -371,7 +370,7 @@ msgstr "فئة"
 #: .\careers\ui\templates\careers\job_list.html:70
 #: .\careers\ui\templates\careers\job_list.html:76
 msgid "Remote"
-msgstr "عن بُعد"
+msgstr "Uzaktan"
 
 #: .\careers\ui\templates\careers\category.html:81
 #: .\careers\ui\templates\careers\index.html:83
@@ -379,89 +378,89 @@ msgstr "عن بُعد"
 #: .\careers\ui\templates\careers\job_landing.html:47
 #: .\careers\ui\templates\careers\job_list.html:98
 msgid "Seniority level"
-msgstr "المستوى الوظيفي"
+msgstr "Kıdem düzeyi"
 
 #: .\careers\ui\templates\careers\category.html:105
 #: .\careers\ui\templates\careers\index.html:107
 #: .\careers\ui\templates\careers\job_list.html:122
 msgid "Date published"
-msgstr "تاريخ النشر"
+msgstr "Yayınlanma tarihi"
 
 #: .\careers\ui\templates\careers\components\category.html:13
 #: .\careers\ui\templates\careers\job_list.html:4
 #: .\careers\ui\templates\careers\job_list.html:13
 msgid "Jobs"
-msgstr "وظائف"
+msgstr "İşler"
 
 #: .\careers\ui\templates\careers\components\form.html:28
 msgid "Submit"
-msgstr "إرسال"
+msgstr "Gönder"
 
 #: .\careers\ui\templates\careers\components\pagination.html:8
 #: .\careers\ui\templates\careers\components\pagination.html:15
 msgid "Previous"
-msgstr "السابق"
+msgstr "Önceki"
 
 #: .\careers\ui\templates\careers\components\pagination.html:21
 #: .\careers\ui\templates\careers\components\pagination.html:24
 msgid "First"
-msgstr "الأولى"
+msgstr "İlk"
 
 #: .\careers\ui\templates\careers\components\pagination.html:31
 msgid "Current"
-msgstr "الحالية"
+msgstr "Geçerli"
 
 #: .\careers\ui\templates\careers\components\pagination.html:41
 #: .\careers\ui\templates\careers\components\pagination.html:47
 msgid "Last"
-msgstr "الأخيرة"
+msgstr "Son"
 
 #: .\careers\ui\templates\careers\components\pagination.html:53
 #: .\careers\ui\templates\careers\components\pagination.html:63
 msgid "Next"
-msgstr "التالي"
+msgstr "Sonraki"
 
 #: .\careers\ui\templates\careers\components\theme.html:5
 #: .\careers\ui\templates\careers\components\theme.html:13
 msgid "Theme"
-msgstr "السمة"
+msgstr "Tema"
 
 #: .\careers\ui\templates\careers\components\theme.html:22
 msgid "Select a theme"
-msgstr "اختر سمة"
+msgstr "Tema seç"
 
 #: .\careers\ui\templates\careers\index.html:18
 msgid "Latest Jobs"
-msgstr "أحدث الوظائف"
+msgstr "En yeni işler"
 
 #: .\careers\ui\templates\careers\index.html:125
 msgid "No Jobs"
-msgstr "لا توجد وظائف"
+msgstr "İş yok"
 
 #: .\careers\ui\templates\careers\index.html:127
 msgid "Latest Jobs will appear here."
-msgstr "ستظهر أحدث الوظائف هنا."
+msgstr "En yeni işler burada görünecek."
 
 #: .\careers\ui\templates\careers\index.html:136
 msgid "Categories"
-msgstr "الفئات"
+msgstr "Kategoriler"
 
 #: .\careers\ui\templates\careers\index.html:146
 msgid "Read"
-msgstr "اقرأ"
+msgstr "Oku"
 
 #: .\careers\ui\templates\careers\index.html:161
 msgid "No categories"
-msgstr "لا توجد فئات"
+msgstr "Kategori yok"
 
 #: .\careers\ui\templates\careers\index.html:164
 msgid "Published categories will appear here."
-msgstr "ستظهر الفئات المنشورة هنا."
+msgstr "Yayınlanan kategoriler burada görünecek."
 
 #: .\careers\ui\templates\careers\job.html:46
 #: .\careers\ui\templates\careers\job_landing.html:34
 msgid "Location"
-msgstr "الموقع"
+msgstr "Konum"
 
 #: .\careers\ui\templates\careers\job.html:100
 #: .\careers\ui\templates\careers\job.html:106
@@ -469,12 +468,12 @@ msgstr "الموقع"
 #: .\careers\ui\templates\careers\job.html:116
 #: .\careers\ui\templates\careers\job.html:131
 msgid "Apply"
-msgstr "قدّم"
+msgstr "Başvur"
 
 #: .\careers\ui\templates\careers\job_landing.html:76
 #: .\careers\ui\templates\careers\job_landing.html:80
 msgid "Success"
-msgstr "نجاح"
+msgstr "Başarılı"
 
 #: .\careers\ui\templates\careers\job_list.html:15
 msgid ""
@@ -482,70 +481,70 @@ msgid ""
 "passions. Use filters to tailor results and easily apply with your latest "
 "resume."
 msgstr ""
-"استكشف وظائفنا المتاحة حاليًا واكتشف الفرص التي تتوافق مع شغفك. استخدم المرشّحات لتخصيص النتائج وقدّم بسهولة باستخدام أحدث سيرة ذاتية لديك."
+"Mevcut iş ilanlarımızı keşfedin ve tutkularınıza uygun fırsatları bulun. Sonuçları özelleştirmek için filtreleri kullanın ve en güncel özgeçmişinizle kolayca başvurun."
 
 #: .\careers\ui\templates\careers\job_list.html:23
 #: .\careers\ui\templates\careers\job_list.html:31
 #: .\careers\ui\templates\careers\job_list.html:146
 msgid "Filters"
-msgstr "مرشّحات"
+msgstr "Filtreler"
 
 #: .\careers\ui\templates\careers\search.html:34
 msgid "Go"
-msgstr "اذهب"
+msgstr "Git"
 
 #: .\careers\ui\templates\careers\search.html:41
 msgid "Search results"
-msgstr "نتائج البحث"
+msgstr "Arama sonuçları"
 
 #: .\careers\ui\templates\careers\search.html:50
 msgid "No results found"
-msgstr "لا توجد نتائج"
+msgstr "Sonuç bulunamadı"
 
 #: .\careers\ui\templates\registration\logged_out.html:4
 msgid "Logged out"
-msgstr "تم تسجيل الخروج"
+msgstr "Çıkış yapıldı"
 
 #: .\careers\ui\templates\registration\logged_out.html:36
 msgid "Logged Out"
-msgstr "تم تسجيل الخروج"
+msgstr "Çıkış yapıldı"
 
 #: .\careers\ui\templates\registration\logged_out.html:38
 msgid "Thanks for spending some quality time with us today."
-msgstr "شكرًا لقضاء بعض الوقت الجميل معنا اليوم."
+msgstr "Bugün bizimle kaliteli zaman geçirdiğiniz için teşekkürler."
 
 #: .\careers\ui\templates\registration\login.html:4
 #: .\careers\ui\templates\registration\login.html:36
 msgid "Log in"
-msgstr "تسجيل الدخول"
+msgstr "Giriş yap"
 
 #: .\careers\ui\templates\registration\login.html:38
 msgid "Welcome, please login to continue."
-msgstr "مرحبًا، يرجى تسجيل الدخول للمتابعة."
+msgstr "Hoş geldiniz, devam etmek için lütfen giriş yapın."
 
 #: .\careers\ui\templates\registration\login.html:48
 msgid ""
 "Your account doesn't have access to this page. To proceed, please login with "
 "an account that has access. <!---->"
 msgstr ""
-"حسابك لا يمتلك صلاحية الوصول إلى هذه الصفحة. للمتابعة، يرجى تسجيل الدخول بحساب لديه صلاحية الوصول. <!---->"
+"Hesabınızın bu sayfaya erişimi yok. Devam etmek için lütfen erişimi olan bir hesapla giriş yapın. <!---->"
 
 #: .\careers\ui\templates\rest_framework\api.html:24
 #: .\careers\ui\templates\rest_framework\api.html:32
 msgid "Django Careers | API"
-msgstr "وظائف جانغو | واجهة برمجة التطبيقات"
+msgstr "Django Careers | API"
 
 #: .\careers\ui\templates\rest_framework\api.html:56
 #: .\careers\ui\templates\rest_framework\api.html:63
 msgid "Pages"
-msgstr "الصفحات"
+msgstr "Sayfalar"
 
 #: .\careers\ui\templates\rest_framework\api.html:68
 #: .\careers\ui\templates\rest_framework\api.html:75
 msgid "Images"
-msgstr "الصور"
+msgstr "Görseller"
 
 #: .\careers\ui\templates\rest_framework\api.html:80
 #: .\careers\ui\templates\rest_framework\api.html:87
 msgid "Documents"
-msgstr "المستندات"
+msgstr "Belgeler"
